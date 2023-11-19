@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by Mariam Mchedlidze on 20.11.23.
 //
@@ -9,8 +9,8 @@ import Foundation
 
 // MARK: - Welcome
 public struct CatsResponse: Decodable {
-    let data: [Cats]
-
+    public   let data: [Cats]
+    
 }
 
 // MARK: - Datum

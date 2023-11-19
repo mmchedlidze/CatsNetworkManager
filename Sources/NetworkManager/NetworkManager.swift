@@ -4,12 +4,12 @@
 import Foundation
 
 public final class NetworkManager {
-    static let shared = NetworkManager()
+    public static let shared = NetworkManager()
     private let baseURL = "https://catfact.ninja/facts"
     
     private init() {}
     
-    func fetchMovies(completion: @escaping (Result<[Cats], Error>) -> Void ){
+    public func fetchMovies(completion: @escaping (Result<[Cats], Error>) -> Void ){
         let urlStr = baseURL
         guard let url = URL(string: urlStr) else {
             completion(.failure(NSError(domain:"", code: -1, userInfo: [ NSLocalizedDescriptionKey: "Invalid URL"])))
