@@ -9,13 +9,13 @@ import Foundation
 
 // MARK: - Welcome
 public struct CatsResponse: Decodable {
-    public   let data: [Cats]
+    public let data: [Cats]
     
 }
 
 // MARK: - Datum
 public struct Cats: Decodable {
-    let fact: String
+    public let fact: String
     
     enum CodingKeys: String, CodingKey {
         case fact
